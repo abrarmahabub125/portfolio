@@ -53,13 +53,18 @@ export default function HeroSection() {
           </div>
 
           <p className="mx-auto mt-8 max-w-3xl px-2 text-sm leading-7 text-gray-400 sm:text-base sm:leading-8">
-            Passionate technologist pursuing Computer Science at PSTU. I build
-            full-stack applications, compete in CTF challenges, and explore the
-            fascinating world of data science and machine learning.
+            I am a{" "}
+            <span className="font-semibold text-violet-400">MERN Stack</span>{" "}
+            Developer skilled in MongoDB, Express.js, React.js, and Node.js,
+            building scalable and efficient web applications.
           </p>
         </div>
 
-        <div className="mt-8 flex flex-wrap justify-center gap-3 sm:gap-4" data-aos="fade-up" data-aos-delay="220">
+        <div
+          className="mt-8 flex flex-wrap justify-center gap-3 sm:gap-4"
+          data-aos="fade-up"
+          data-aos-delay="220"
+        >
           <RoundIcon
             href="https://www.github.com/abrarmahabub125"
             label="github"
@@ -83,7 +88,11 @@ export default function HeroSection() {
           </RoundIcon>
         </div>
 
-        <div className="mt-10 flex items-center justify-center gap-3" data-aos="fade-up" data-aos-delay="300">
+        <div
+          className="mt-10 flex items-center justify-center gap-3"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
           <a
             href="#contact"
             className="inline-flex w-full max-w-56 items-center justify-center gap-3 rounded-full bg-linear-to-r from-violet-500 to-purple-400 font-medium px-6 py-2.5 lg:py-3 text-sm text-white shadow-[0_20px_50px_rgba(139,92,246,0.22)] hover:scale-[1.01] sm:w-auto lg:text-base"
@@ -99,7 +108,11 @@ export default function HeroSection() {
           </a>
         </div>
 
-        <div className="mt-10 flex justify-center" data-aos="fade-up" data-aos-delay="380">
+        <div
+          className="mt-10 flex justify-center"
+          data-aos="fade-up"
+          data-aos-delay="380"
+        >
           <a
             href="#about"
             aria-label="Scroll down to about section"

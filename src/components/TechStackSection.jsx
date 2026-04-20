@@ -19,7 +19,12 @@ const techData = [
   },
   {
     title: "<Database />",
-    items: [{ name: "MongoDB", level: 80 }],
+    items: [
+      { name: "MongoDB", level: 80 },
+      { name: "Advanced Queries", level: 85 },
+      { name: "Aggregation Pipeline", level: 90 },
+      { name: "Indexing", level: 75 },
+    ],
   },
   {
     title: "<DevOps & Tools />",

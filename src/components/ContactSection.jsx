@@ -39,7 +39,7 @@ export default function ContactSection() {
             <InfoCard
               icon={<MapPin size={22} />}
               title="Location"
-              lines={["Dhaka, Bangladesh", "Working remotely"]}
+              lines={["Meherpur, Bangladesh", "Working remotely"]}
               delay={0}
             />
 
@@ -61,19 +61,34 @@ export default function ContactSection() {
             >
               <h4 className="mb-4 font-semibold text-white">Connect with me</h4>
               <div className="flex flex-wrap gap-3">
-                <SocialButton href="#" ariaLabel="GitHub">
+                <SocialButton
+                  href="https://www.github.com/abrarmahabub125"
+                  ariaLabel="GitHub"
+                >
                   <Github size={18} />
                 </SocialButton>
-                <SocialButton href="#" ariaLabel="LinkedIn">
+                <SocialButton
+                  href="https://www.linkedin.com/in/abrarmahabub11/"
+                  ariaLabel="LinkedIn"
+                >
                   <Linkedin size={18} />
                 </SocialButton>
-                <SocialButton href="#" ariaLabel="Facebook">
+                <SocialButton
+                  href="https://www.facebook.com/mr.abrar.mahabub"
+                  ariaLabel="Facebook"
+                >
                   <Facebook size={18} />
                 </SocialButton>
-                <SocialButton href="#" ariaLabel="Twitter">
+                <SocialButton
+                  href="https://x.com/abrar_mahabub"
+                  ariaLabel="Twitter"
+                >
                   <Twitter size={18} />
                 </SocialButton>
-                <SocialButton href="#" ariaLabel="Instagram">
+                <SocialButton
+                  href="https://www.instagram.com/mr.abrar_mahabub/"
+                  ariaLabel="Instagram"
+                >
                   <Instagram size={18} />
                 </SocialButton>
               </div>

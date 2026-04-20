@@ -80,7 +80,7 @@ export default function ContactForm() {
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <button
           type="submit"
-          className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-linear-to-r from-violet-500 to-purple-400 px-4 py-3 text-base font-medium text-white shadow-[0_20px_40px_rgba(139,92,246,0.18)] sm:w-fit"
+          className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-linear-to-r from-violet-500 to-purple-400 px-4 py-2.5 text-base font-medium text-white shadow-[0_20px_40px_rgba(139,92,246,0.18)] sm:w-fit"
         >
           <Send size={16} />
           <span>Send</span>

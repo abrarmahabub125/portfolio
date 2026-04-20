@@ -1,37 +1,49 @@
 import { Code, ExternalLink } from "lucide-react";
+import XcomImage from "../assets/Screenshot 2026-04-20 090842.png";
+import EstateinImage from "../assets/Screenshot 2026-04-20 091913.png";
+import BookLibraryImage from "../assets/Screenshot 2026-04-20 093142.png";
+import MotionPixelImage from "../assets/Screenshot 2026-04-20 093449.png";
 
 const featured = [
   {
-    id: "cf-techlab",
-    title: "CF TechLab",
+    id: "1",
+    title: "X.com Clone",
     subtitle:
-      "My tech company delivering cutting-edge web, mobile, and AI solutions.",
-    tags: ["React", "Node.js", "AI/ML", "Cloud", "TypeScript"],
-    bgAccent: "from-violet-500 to-purple-400",
+      "A modern social media platform inspired by X.com, built with React.js, Node.js, and express.js, featuring real-time updates and a sleek design.",
+    image: XcomImage,
+    tags: ["React", "Node.js", "MongoDB", "Tailwind CSS", "Express"],
+    codeLink: "https://github.com/abrarmahabub125/x-clone",
+    liveLink: "https://xcomclone-five.vercel.app",
   },
   {
-    id: "creativity-freaks",
-    title: "Creativity Freaks",
+    id: "2",
+    title: "Estatein: Property Management",
     subtitle:
-      "A modern e-learning platform offering free and paid courses and tutorials.",
-    tags: ["HTML", "TypeScript", "JavaScript"],
-    bgAccent: "from-violet-500 to-purple-400",
+      "A property management website that allows users to browse and manage real estate listings, built with HTML, JavaScript, and Tailwind CSS.",
+    image: EstateinImage,
+    tags: ["HTML", "JavaScript", "Tailwind CSS"],
+    codeLink: "https://github.com/abrarmahabub125/estatein-website",
+    liveLink: "https://estatein-website-lyart.vercel.app/",
   },
   {
-    id: "harvestia",
-    title: "Harvestia: Sustainable Farmer",
+    id: "3",
+    title: "Book Library",
     subtitle:
-      "Gamified learning project focused on sustainable agriculture and simulation.",
-    tags: ["JavaScript", "Game", "Education"],
-    bgAccent: "from-violet-500 to-purple-400",
+      "A book library management system that allows users to add, edit, and delete books from their collection, built with HTML, JavaScript, and Tailwind CSS.",
+    image: BookLibraryImage,
+    tags: ["JavaScript", "Tailwind CSS", "React", "Node.js", "Express"],
+    codeLink: "https://github.com/abrarmahabub125/book-library-fullstack",
+    liveLink: "https://book-library-frontend-gilt.vercel.app/",
   },
   {
-    id: "freakflow",
-    title: "FreakFlow",
+    id: "4",
+    title: "Motion Pixel",
     subtitle:
-      "Modern streaming platform with auth, responsive design, and streaming.",
-    tags: ["React", "TypeScript", "Streaming", "Supabase"],
-    bgAccent: "from-violet-500 to-purple-400",
+      "A picture streaming platform that allows users to upload and share their photos in real-time, built with React.",
+    image: MotionPixelImage,
+    tags: ["React", "HTML", "Tailwind CSS"],
+    codeLink: "https://github.com/abrarmahabub125/motion-pixel-gallery",
+    liveLink: "https://motion-pixel.vercel.app/",
   },
 ];
 
@@ -71,11 +83,13 @@ export default function RecentProjects() {
               data-aos-delay={index * 110}
             >
               <div
-                className={`flex h-28 items-center justify-center bg-linear-to-r sm:h-32 md:h-36 ${project.bgAccent}`}
+                className={`flex h-28 items-center justify-center bg-linear-to-r sm:h-32 md:h-36`}
               >
-                <span className="select-none text-4xl text-black/80 md:text-5xl">
-                  {"<>"}
-                </span>
+                <img
+                  className="h-full w-full object-cover"
+                  src={project.image}
+                  alt="x.com image"
+                />
               </div>
 
               <div className="flex flex-1 flex-col p-5 sm:p-6">
@@ -101,23 +115,27 @@ export default function RecentProjects() {
                 </div>
 
                 <div className="mt-auto flex flex-wrap items-center gap-4 text-sm text-gray-400">
-                  <button
-                    type="button"
+                  <a
+                    href={project.codeLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 hover:text-white"
                     aria-label={`View code for ${project.title}`}
                   >
                     <Code size={16} />
                     <span>Code</span>
-                  </button>
+                  </a>
 
-                  <button
-                    type="button"
+                  <a
+                    href={project.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 hover:text-white"
                     aria-label={`Open live demo for ${project.title}`}
                   >
                     <ExternalLink size={16} />
                     <span>Live Demo</span>
-                  </button>
+                  </a>
                 </div>
               </div>
             </article>
@@ -130,7 +148,7 @@ export default function RecentProjects() {
           data-aos-delay="120"
         >
           <a
-            href="#github"
+            href="https://github.com/abrarmahabub125?tab=repositories"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 text-xs rounded-full border border-gray-800 bg-white/[0.03] px-4 py-2 lg:text-sm text-white"
