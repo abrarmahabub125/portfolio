@@ -13,7 +13,7 @@ const featured = [
     image: XcomImage,
     tags: ["React", "Node.js", "MongoDB", "Tailwind CSS", "Express"],
     codeLink: "https://github.com/abrarmahabub125/x-clone",
-    liveLink: "https://xcomclone-five.vercel.app",
+    liveLink: "https://x-social-clone.vercel.app/",
   },
   {
     id: "2",
